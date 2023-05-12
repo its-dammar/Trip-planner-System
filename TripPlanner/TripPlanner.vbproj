@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08A7D250-C9E5-4EA2-9EFD-60208A67D292}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TripPlanner.My.MyApplication</StartupObject>
+    <RootNamespace>TripPlanner</RootNamespace>
+    <AssemblyName>TripPlanner</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>TripPlanner.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms.Design" />
+    <Import Include="System.Windows.Forms.Layout" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="TripPlanner" />
+    <Import Include="TripPlanner.My" />
+    <Import Include="TripPlanner.My.Resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutapp.Designer.vb">
+      <DependentUpon>aboutapp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aboutapp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addadmin.Designer.vb">
+      <DependentUpon>addadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addimage.Designer.vb">
+      <DependentUpon>addimage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addimage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crudplacedetails.Designer.vb">
+      <DependentUpon>crudplacedetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crudplacedetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.vb">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeAdminpassword.Designer.vb">
+      <DependentUpon>changeAdminpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changeAdminpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeUserpassword.Designer.vb">
+      <DependentUpon>changeUserpassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changeUserpassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="davisfall.Designer.vb">
+      <DependentUpon>davisfall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="davisfall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.vb">
+      <DependentUpon>home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hugu.Designer.vb">
+      <DependentUpon>hugu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hugu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kapuche.Designer.vb">
+      <DependentUpon>Kapuche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kapuche.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lakeside.Designer.vb">
+      <DependentUpon>lakeside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="lakeside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="landingForm.Designer.vb">
+      <DependentUpon>landingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="landingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mahendracave.Designer.vb">
+      <DependentUpon>mahendracave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mahendracave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="map.Designer.vb">
+      <DependentUpon>map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="map.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="place.Designer.vb">
+      <DependentUpon>place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addplacedetails.Designer.vb">
+      <DependentUpon>addplacedetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addplacedetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sarangkot.Designer.vb">
+      <DependentUpon>sarangkot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sarangkot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="selectedplace.Designer.vb">
+      <DependentUpon>selectedplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="selectedplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setplan.Designer.vb">
+      <DependentUpon>setplan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setplan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.vb">
+      <DependentUpon>setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUp.Designer.vb">
+      <DependentUpon>signUp.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="talbarahi.Designer.vb">
+      <DependentUpon>talbarahi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="talbarahi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.vb">
+      <DependentUpon>user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.vb">
+      <DependentUpon>userlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewplan.Designer.vb">
+      <DependentUpon>viewplan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewplan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="aboutapp.resx">
+      <DependentUpon>aboutapp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addadmin.resx">
+      <DependentUpon>addadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addimage.resx">
+      <DependentUpon>addimage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crudplacedetails.resx">
+      <DependentUpon>crudplacedetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeAdminpassword.resx">
+      <DependentUpon>changeAdminpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeUserpassword.resx">
+      <DependentUpon>changeUserpassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="davisfall.resx">
+      <DependentUpon>davisfall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hugu.resx">
+      <DependentUpon>hugu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kapuche.resx">
+      <DependentUpon>Kapuche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lakeside.resx">
+      <DependentUpon>lakeside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="landingForm.resx">
+      <DependentUpon>landingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mahendracave.resx">
+      <DependentUpon>mahendracave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="place.resx">
+      <DependentUpon>place.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addplacedetails.resx">
+      <DependentUpon>addplacedetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sarangkot.resx">
+      <DependentUpon>sarangkot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="selectedplace.resx">
+      <DependentUpon>selectedplace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setplan.resx">
+      <DependentUpon>setplan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUp.resx">
+      <DependentUpon>signUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="talbarahi.resx">
+      <DependentUpon>talbarahi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewplan.resx">
+      <DependentUpon>viewplan.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
